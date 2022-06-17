@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hamburger {
+            cursor: pointer;
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            transition: all 0.25s;
+        }
+        
+        .hamburger--top-cc,
+        .hamburger--bottom--cc {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 15px;
+            width: 18px;
+            height: 1px;
+            background: #fff;
+            transform: rotate(0);
+            transition: all 0.25s;
+        }
+        
+        .hamburger--top-cc {
+            top: 23px;
+            transform: translate(-3px);
+        }
+        
+        .hamburger--bottom--cc {
+            bottom: 23px;
+            transform: translate(3px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hamburger">
+        <span class="hamburger--top-cc"></span>
+        <span class="hamburger--bottom-cc"></span>
+    </div>
+</body>
+
+</html>
