@@ -5,14 +5,14 @@
 }
 
 body {
-    background-color: #1a5248;
+    background-color: #e3ebe9;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .full {
-    background-color: rgb(7, 71, 71);
+    background-color: rgb(175, 212, 212);
     width: 80%;
     max-width: 1000px;
     min-height: 100px;
@@ -33,8 +33,6 @@ body {
     padding: 20px;
 }
 
-
-}
 .Image,
 .Contact,
 .Skills,
@@ -46,6 +44,7 @@ body {
 .Education {
     margin-bottom: 30px;
 }
+
 .h2 {
     background-color: rgb(31, 100, 100)
 }
