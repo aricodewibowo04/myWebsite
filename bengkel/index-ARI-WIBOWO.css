@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    border-bottom: 1px solid rgb(72, 255, 0);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 32px;
+    font-weight: 400;
+    color: #4eff08
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0)
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    font-size: 18px;
+}
+
+.menu li {
+    padding: 3px 10px;
+}
+
+.menu li:hover {
+    border-bottom: 1px solid #4eff08;
+    transition: 0.3s ease;
+}
+
+.product {
+    position: relative;
+}
+
+.product:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    border-bottom: 1px solid #4eff08;
+    position: absolute;
+    top: 28px;
+    width: 6em;
+    display: none;
+}
+
+.dropdown li+li {
+    padding: 13px;
+}
+
+.dropdown li {
+    padding: 0.5 1em;
+    width: 5em;
+    text-align: center;
+    align-items: center;
+}
+
+.dropdown li:hover {
+    border-bottom: 1px solid green;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.hamburger {
+    font-size: 24px;
+    user-select: none;
+    display: none;
+}
+
+.main {
+    background-color: beige;
+    width: 100%;
+    height: 25em;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 130px;
+}
+
+@media only screen and (max-width:768px) {
+    input[type="checkbox"]:checked~.menu {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        border-bottom: 1px solid #4eff083d;
+        text-align: center;
+        right: 20px;
+        padding: 12px;
+        display: none;
+    }
+    .menu li+li {
+        margin-top: 12px;
+    }
+    .dropdown {
+        top: 5px;
+        right: 100px;
+        transform: translate(35%);
+    }
+    .dropdown:hover {
+        border-bottom: 1px solid #4eff083d;
+    }
+}
