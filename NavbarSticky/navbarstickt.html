@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        body {
+            font-family: cursive;
+        }
+        
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: antiquewhite;
+        }
+        
+        .nav-logo {
+            font-size: 32px;
+            color: #b005ff;
+        }
+        
+        .nav-link a {
+            color: #b005ff;
+        }
+        
+        .menu {
+            display: flex;
+            gap: 2rem;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-logo">wiCode</div>
+
+        <ul class="nav-link">
+            <input type="checkbox" id="checkbox-toggle">
+            <label for="checkbox-toggle" class="hamburger">&#9776</label>
+            <div class="menu">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li class="product">
+                    <ul class="dropdown">
+                        <li><a href="#">Product1</a></li>
+                        <li><a href="#">Product1</a></li>
+                        <li><a href="#">Product1</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a> </li>
+                <li><a href="#abaout">About</a> </li>
+            </div>
+        </ul>
+    </div>
+</body>
+
+</html>
